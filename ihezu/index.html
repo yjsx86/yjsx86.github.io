@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/tailwind.css">
+  <title>Document</title>
+</head>
+
+<body class="text-md">
+  <!-- nav -->
+  <nav id="nav" class="bg-red-500 text-white sticky top-0 z-50">
+    <div class=" wrapper py-3 flex justify-between items-center">
+    <div>logo</div>
+    <div class="flex space-x-4 items-center">
+      <span>发车</span>
+      <span>搜片</span>
+      <span>推广</span>
+      <span>车票</span>
+      <svg t="1628956222526" class="icon w-8 h-8 fill-current" viewBox="0 0 1025 1024" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" p-id="1251">
+        <path
+          d="M680.332 868.548C629.412 892.558 572.529 906 512.5 906c-217.601 0-394-176.399-394-394 0-217.6 176.399-394 394-394 217.6 0 394 176.4 394 394 0 77.83-22.566 150.39-61.515 211.491-7.526 11.809-15.685 23.173-24.396 34.077-0.58 0.727-10.923 26.809 7.744 37.433s41.798-9.866 41.798-9.866c6.146-8.035 12.042-16.27 17.646-24.718C934.996 689.228 962.5 603.826 962.5 512c0-248.528-201.472-450-450-450s-450 201.472-450 450 201.472 450 450 450c68.382 0 133.191-15.271 191.229-42.561 0.178-0.084 0.355-0.168 0.533-0.252 1.753-0.826 19.487-18.438 11.862-36.438S680.332 868.548 680.332 868.548z"
+          p-id="1252"></path>
+        <path
+          d="M668.608 361.235c0-88.38-71.637-160.036-160.019-160.036-88.362 0-159.98 71.635-159.98 160.036 0 88.339 71.619 159.964 159.98 159.964C596.971 521.199 668.608 449.553 668.608 361.235M404.59 361.232c0-57.453 46.546-104.016 104.001-104.016 57.486 0 104 46.563 104 104.016 0 57.422-46.516 103.984-104 103.984C451.136 465.202 404.591 418.639 404.59 361.232"
+          p-id="1253"></path>
+        <path
+          d="M786.035 684.801c-25.363-116.152-122.805-205.346-243.104-218.347-9.107-0.984-18.422 0.397-27.77 0.308l2.588 54.105c100.617 2.314 184.826 70.973 210.611 163.934L296.64 684.801c12.719-45.855 39.655-85.799 75.765-114.783 0 0 10.549-20.381-1.826-34.256s-36.071-7.088-36.071-7.088c-47.538 39.203-81.928 93.779-95.542 156.127-3.947 18.076-6.146 36.805-6.415 56l56.001 0 447.898 0 56 0C792.18 721.605 789.983 702.877 786.035 684.801z"
+          p-id="1254"></path>
+      </svg>
+    </div>
+    </div>
+  </nav>
+
+  <!-- header -->
+  <header class="pt-2 bg-gradient-to-t from-blue-400 to-red-500 text-white">
+    <div class="wrapper">
+      <!-- 顶部的透明容器 -->
+      <div class="flex items-center rounded-xl space-x-2 w-full bg-white bg-opacity-25 px-3 py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+        <span>推荐朋友购买，10%返现实时到账微信零钱 </span>
+      </div>
+
+      <!-- 卡片容器 -->
+      <div class="mt-1 py-10 sm:pb-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+
+        <!-- 卡片 -->
+        <div class="shadow-xl rounded-3xl overflow-hidden bg-white text-black">
+          <div class="pt-5 bg-black flex flex-col">
+            <img class="object-contain h-14 w-full" src="https://www.ihezu.cn/static/sku/netflix.png" alt="">
+            <span class="text-center text-white text-opacity-75 -mt-1">销量：15000</span>
+          </div>
+          <div class="flex px-3 py-2 justify-between items-center border-b border-gray-300">
+            <div>Netflix</div>
+            <div class="flex space-x-1 items-center">
+              <span class="text-gray-400">¥</span>
+              <span class="text-red-400 text-2xl font-semibold">20.90-22</span>
+              <span class="text-gray-400">/月</span>
+              <span class="text-red-400 text-sm p-1 ring-1 ring-red-400 rounded-sm">立减优惠</span>
+            </div>
+          </div>
+          <div class="p-3 flex flex-col pt-1">
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">可长期续费不换号</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">独立观影记录，4K高清</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">即买即用，现号秒发</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">浏览器，电视盒子，手机全平台支持</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">不限观看区域</p>
+            </div>
+            <div class="flex h-10 bg-red-500 rounded-full shadow-md mt-2 text-white">
+              <span class="m-auto">快捷上车</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow-xl rounded-3xl overflow-hidden bg-white text-black">
+          <div class="pt-5 bg-black flex flex-col">
+            <img class="object-contain h-14 w-full" src="https://www.ihezu.cn/static/sku/netflix.png" alt="">
+            <span class="text-center text-white text-opacity-75 -mt-1">销量：15000</span>
+          </div>
+          <div class="flex px-3 py-2 justify-between items-center border-b border-gray-300">
+            <div>Netflix</div>
+            <div class="flex space-x-1 items-center">
+              <span class="text-gray-400">¥</span>
+              <span class="text-red-400 text-2xl font-semibold">20.90-22</span>
+              <span class="text-gray-400">/月</span>
+              <span class="text-red-400 text-sm p-1 ring-1 ring-red-400 rounded-sm">立减优惠</span>
+            </div>
+          </div>
+          <div class="p-3 flex flex-col pt-1">
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">可长期续费不换号</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">独立观影记录，4K高清</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">即买即用，现号秒发</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">浏览器，电视盒子，手机全平台支持</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">不限观看区域</p>
+            </div>
+            <div class="flex h-10 bg-red-500 rounded-full shadow-md mt-2 text-white">
+              <span class="m-auto">快捷上车</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow-xl rounded-3xl overflow-hidden bg-white text-black">
+          <div class="pt-5 bg-black flex flex-col">
+            <img class="object-contain h-14 w-full" src="https://www.ihezu.cn/static/sku/netflix.png" alt="">
+            <span class="text-center text-white text-opacity-75 -mt-1">销量：15000</span>
+          </div>
+          <div class="flex px-3 py-2 justify-between items-center border-b border-gray-300">
+            <div>Netflix</div>
+            <div class="flex space-x-1 items-center">
+              <span class="text-gray-400">¥</span>
+              <span class="text-red-400 text-2xl font-semibold">20.90-22</span>
+              <span class="text-gray-400">/月</span>
+              <span class="text-red-400 text-sm p-1 ring-1 ring-red-400 rounded-sm">立减优惠</span>
+            </div>
+          </div>
+          <div class="p-3 flex flex-col pt-1">
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">可长期续费不换号</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">独立观影记录，4K高清</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">即买即用，现号秒发</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">浏览器，电视盒子，手机全平台支持</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">不限观看区域</p>
+            </div>
+            <div class="flex h-10 bg-red-500 rounded-full shadow-md mt-2 text-white">
+              <span class="m-auto">快捷上车</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow-xl rounded-3xl overflow-hidden bg-white text-black">
+          <div class="pt-5 bg-black flex flex-col">
+            <img class="object-contain h-14 w-full" src="https://www.ihezu.cn/static/sku/netflix.png" alt="">
+            <span class="text-center text-white text-opacity-75 -mt-1">销量：15000</span>
+          </div>
+          <div class="flex px-3 py-2 justify-between items-center border-b border-gray-300">
+            <div>Netflix</div>
+            <div class="flex space-x-1 items-center">
+              <span class="text-gray-400">¥</span>
+              <span class="text-red-400 text-2xl font-semibold">20.90-22</span>
+              <span class="text-gray-400">/月</span>
+              <span class="text-red-400 text-sm p-1 ring-1 ring-red-400 rounded-sm">立减优惠</span>
+            </div>
+          </div>
+          <div class="p-3 flex flex-col pt-1">
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">可长期续费不换号</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">独立观影记录，4K高清</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">即买即用，现号秒发</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">浏览器，电视盒子，手机全平台支持</p>
+            </div>
+            <div class="flex items-center pt-1 text-sm space-x-2 font-semibold">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-green-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="font-semibold">不限观看区域</p>
+            </div>
+            <div class="flex h-10 bg-red-500 rounded-full shadow-md mt-2 text-white">
+              <span class="m-auto">快捷上车</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="bg-gray-50 flex flex-col">
+
+    <div class="flex justify-around my-5">
+      <div class="flex flex-col items-center">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/netflix.png" alt="">
+        <span class="uppercase mt-2 text-gray-700">netflix</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/netflix.png" alt="">
+        <span class="uppercase mt-2 text-gray-700">netflix</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/netflix.png" alt="">
+        <span class="uppercase mt-2 text-gray-700">netflix</span>
+      </div>
+    </div>
+
+    <!-- 卡片容器 -->
+    <div class="wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded-md overflow-hidden">
+        <div class="flex p-3 justify-between items-center space-x-2">
+          <img class="w-20 h-20 rounded mt-1" src="https://www.ihezu.cn/static/74bd38daly1g9v3emqge2j20b40b4ace.jpg"
+            alt="">
+          <div class="flex flex-col flex-1">
+            <span>奈飞正规5人车不换号</span>
+            <div class="text-xs">
+              <span class="bg-red-500 px-1 rounded text-white">有售后</span>
+              <span class="bg-red-500 px-1 rounded text-white">无限续费</span>
+              <span class="bg-red-500 px-1 rounded text-white">自动改密</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="space-x-1"><span>¥</span><span>22.00</span><span class="text-xs text-gray-400 line-through">¥
+                  25</span></div>
+              <span class="text-xs text-gray-400">x2个月起</span>
+            </div>
+            <div>
+              <span class="px-1 border border-red-500 rounded text-red-500 text-sm">立减优惠</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 bg-white">
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+          <div class="pt-4 flex flex-col justify-between items-center relative">
+            <div class="relative w-14 h-14 bg-contain rounded-md"
+              style="background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyQtWHp6QmEZVKWgyhDCsSmA6Bl0yia6t55f2SSSwx9pOJ9p25aXI6oglqJImB5k9icusC3vG7WFGg/132);">
+              <div
+                class="w-4 h-4 rounded-full bg-red-500 border border-white text-xs text-center text-white absolute -top-1.5 -right-1.5">
+                1</div>
+            </div>
+            <span class="mb-4 py-2 text-sm">name</span>
+            <div class="bg-red-300 text-xs text-center text-white absolute left-0 bottom-0 right-0">12小时前</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 加载更多 -->
+    <div class="py-8 text-center text-red-500"><span class="border border-red-500 rounded-full py-2 px-12">加载更多</span>
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-gray-900 text-white text-sm">
+    <div class="w-5/6 m-auto py-10 grid grid-cols-3 md:grid-cols-6 grid-rows-2 md:grid-rows-1 gap-6">
+      <div class="flex flex-col items-center space-y-3">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/freetry.png" alt="">
+        <span>免责试用</span>
+      </div>
+      <div class="flex flex-col items-center space-y-3">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/freetry.png" alt="">
+        <span>现号秒发</span>
+      </div>
+      <div class="flex flex-col items-center space-y-3">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/freetry.png" alt="">
+        <span>翻车赔款</span>
+      </div>
+      <div class="flex flex-col items-center space-y-3">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/freetry.png" alt="">
+        <span>无限续费</span>
+      </div>
+      <div class="flex flex-col items-center space-y-3">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/freetry.png" alt="">
+        <span>全自动售后</span>
+      </div>
+      <div class="flex flex-col items-center space-y-3">
+        <img class="w-12 h-12" src="https://www.ihezu.cn/static/freetry.png" alt="">
+        <span>万人售后群</span>
+      </div>
+    </div>
+    <div class="mx-auto w-11/12 border-t border-gray-400"></div>
+    <div class="h-28 flex place-content-center place-items-center">没有找到svg不写了</div>
+  </footer>
+
+  <!-- service -->
+  <div class="fixed right-5 bottom-6 bg-red-500 rounded-full p-2">
+    <svg class="w-10 h-10 fill-current text-white" viewBox="0 0 24 24">
+      <path
+        d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z" />
+    </svg>
+  </div>
+
+  <script>
+    let nav = document.getElementById('nav')
+    window.addEventListener('scroll', nav_add_class)
+    function nav_add_class(){
+      if (nav.offsetTop != 0) {
+        nav.classList.add('shadow-xl')
+      }else{
+        nav.classList.remove('shadow-xl')
+      }
+    }
+  </script>
+
+</body>
+
+</html>
